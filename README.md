@@ -2,6 +2,7 @@
 This project is a practice based in Cypress 10 and Cucumber(gherkin) for testers who want to learn how can automate a webpage (https://automationexercise.com/),
 
 <b>Requirements</b>
+ - Visual Studio Code
  - Node.js
  - Git
  
