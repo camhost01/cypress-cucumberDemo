@@ -3,15 +3,15 @@ This project is a practice based in Cypress 10 and Cucumber(gherkin) for testers
 
 #1 Configuration in Visual Studio Code
 
-first need to configure Cypress and Cucumber in Visual Studio Code, configuration steps (https://blog.emumba.com/getting-started-with-cypress-10-and-cucumber-6b43ff68633b)
+First need to configure Cypress and Cucumber in Visual Studio Code, configuration steps (https://blog.emumba.com/getting-started-with-cypress-10-and-cucumber-6b43ff68633b)
 
 #2 Cloning the existing project
 
-after configure, you can download the project to your local with xxx, and then execute
+After configure, you can download the project to your local with https://github.com/camhost01/cypress-cucumberDemo.git, and then execute
 
 #3 Execute the project
 
-for execute you can use in the terminal the command: npm run cy:open, this cypress interface is opened
+For execute you can use in the terminal the command: npm run cy:open, this cypress interface is opened
 
 #4 Select E2E Testing
 
