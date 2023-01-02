@@ -1,0 +1,20 @@
+{
+  "website": "https://automationexercise.com/",
+  "name": "testing",
+  "signupUserName": "example1@test.com",
+  "signupUserPass": "foobar",
+  "useremail": "example1@test.com",
+  "userpass": "foobar",
+  "firstname": "exfirstname",
+  "lastname": "exlastname",
+  "company": "excompany",
+  "address": "exaddress",
+  "country": "United States",
+  "state": "Arizona",
+  "city": "Phoenix",
+  "zipcode": "80002",
+  "mobilenum": "202-555-0179",
+  "email": "myemail@test.com",
+  "message": "Fixtures are a great way to mock data for responses to routes",
+  "subject": "This is a subject testing"
+}

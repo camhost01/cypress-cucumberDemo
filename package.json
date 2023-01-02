@@ -1,0 +1,25 @@
+{
+  "name": "cucumber-cypress",
+  "version": "1.0.0",
+  "description": "Cucumber examples with cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "keywords": [
+    "BDD",
+    "Cypress",
+    "Cucumber"
+  ],
+  "author": "Camilo Ramos",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.2.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "esbuild": "^0.16.10"
+  }
+}
