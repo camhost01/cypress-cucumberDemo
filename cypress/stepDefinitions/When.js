@@ -82,3 +82,21 @@ When('filtering by {string} and {string}', (category,product)=>{
             break
     }
 })
+When ('filter by {string}',(brand)=>{
+    switch(brand){
+        case 'Polo':
+            productPage.clickbrandPolo()
+        break
+        case 'H&M':
+            productPage.clickbrandHyM()
+        break
+        case 'Madame':
+            productPage.clickbrandMadame()
+        break
+        case 'Kookie Kids':
+            productPage.clickbrandKyK()
+        break
+        default:
+        break
+    }
+}) 
