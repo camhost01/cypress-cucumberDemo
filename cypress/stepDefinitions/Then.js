@@ -37,7 +37,7 @@ Then('The webpage display an message to confimr',() =>{
 })
 
 //******** PRODUCT ********/
-Then('the products page is displayed', ()=>{
+Then('the products are is displayed in the webpage', ()=>{
     productPage.checkAllProductResult()
 })
 Then('a {string} is displayed', (result)=>{
@@ -53,4 +53,23 @@ Then('a {string} is displayed', (result)=>{
         default:
             break
     }
+})
+Then('product {string} is displayed',(stock)=>{
+    switch(stock){
+        case '6':
+            productPage.checkbrandResult(6)
+        break
+        case '5':
+            productPage.checkbrandResult(5)
+        break
+        case '5':
+            productPage.checkbrandResult(5)
+        break
+        case '3':
+            productPage.checkbrandResult(3)
+        break
+        default:
+            break
+    }
+
 })

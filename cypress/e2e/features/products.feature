@@ -5,7 +5,7 @@ Feature: Products page
     Scenario: Display products page
     Given a user in the landing page
     When clicks in the Products menu in the top bar
-    Then the products page is displayed
+    Then the products are is displayed in the webpage
 
     Scenario Outline: Validate the search product <name> field
     Given a user in the product page
@@ -20,9 +20,20 @@ Feature: Products page
     Scenario Outline: Validate the <category> selection
     Given a user in the product page
     When filtering by "<category>" and "<product>"
-    Then the products page is displayed
+    Then the products are is displayed in the webpage
     Examples:
     | category | product |
     |  Women   |  Tops   |
     |  Men     |  Jeans  |
     |  Kids    |  Dress  |
+
+    Scenario Outline: Validate the <brand> selection
+    Given a user in the product page
+    When filter by "<brand>" 
+    Then product "<stock>" is displayed 
+    Examples: 
+    |   brand      | stock |
+    |    Polo      |   6   |
+    |    H&M       |   5   |
+    |   Madame     |   5   |
+    | Kookie Kids  |   3   |

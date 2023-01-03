@@ -5,6 +5,7 @@ class productP
     elements = {
         productmainresult: ()=> cy.get('.features_items'),
         productsingleresult: ()=> cy.get('#cartModal'),
+        productbrandresult: ()=> cy.get('.features_items .col-sm-4'),
         productsearch: ()=> cy.get('#search_product'),
         btnprodsearch: ()=> cy.get('button[id="submit_search"]'),
         categorywomen: ()=> cy.get('a[href="#Women"]'),
@@ -67,6 +68,23 @@ class productP
     }
     clicksubcatTopyShirt(){
         this.elements.subcattopyshirt().click()
+    }
+    clickbrandPolo(){
+        this.elements.brandpolo().click()
+    }
+    clickbrandHyM(){
+        this.elements.brandhym().click()
+    }
+    clickbrandMadame(){
+        this.elements.brandmadame().click()
+    }
+    clickbrandKyK(){
+        this.elements.brandkookiek().click()
+    }
+    checkbrandResult(stock){
+        this.elements.productbrandresult().should(($val)=>{
+            expect($val).to.have.length(stock)
+        })
     }
 }
 module.exports = new productP()
