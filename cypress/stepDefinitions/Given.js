@@ -45,3 +45,8 @@ Given('a user in the product page', ()=> {
     homePageObject.clickProduct()
     productPage.checkAllProductResult()
 })
+
+//******** CART ********/
+Given('a user in the webpage', ()=> {
+    homePageObject.checkMenuMain()
+})
