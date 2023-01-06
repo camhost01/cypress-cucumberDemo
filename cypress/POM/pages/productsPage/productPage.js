@@ -1,5 +1,3 @@
-
-
 class productP
 {
     elements = {
@@ -7,6 +5,9 @@ class productP
         productsingleresult: ()=> cy.get('#cartModal'),
         productbrandresult: ()=> cy.get('.features_items .col-sm-4'),
         productsearch: ()=> cy.get('#search_product'),
+        btnaddcart: ()=> cy.get('.add-to-cart'),
+        btncontinuechop: ()=> cy.get('button[data-dismiss="modal"]'),
+        btnviewcart: ()=> cy.get('a[href="/view_cart"]'),
         btnprodsearch: ()=> cy.get('button[id="submit_search"]'),
         categorywomen: ()=> cy.get('a[href="#Women"]'),
         subcatdress: ()=> cy.get('a[href="/category_products/1"]'),
@@ -35,6 +36,15 @@ class productP
     }
     clickProdSearch(){
         this.elements.btnprodsearch().click()
+    }
+    clickAddCart(){
+        this.elements.btnaddcart().eq(0).click()
+    }
+    clickContinueShopping(){
+        this.elements.btncontinuechop().click()
+    }
+    clickViewCart(){
+        this.elements.btnviewcart().eq(0).click()
     }
     typeProducSearch(prod){
         this.elements.productsearch().type(prod)

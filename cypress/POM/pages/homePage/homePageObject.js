@@ -1,22 +1,26 @@
 class homePage{
     elements={
-        menuLogout: ()=> cy.get('a[href="/logout"]'),
-        menuProduct: ()=> cy.get('a[href="/products"]'),
-        menuContactus: ()=> cy.get('a[href="/contact_us"]'),
+        menulogout: ()=> cy.get('a[href="/logout"]'),
+        menuproduct: ()=> cy.get('a[href="/products"]'),
+        menucontactus: ()=> cy.get('a[href="/contact_us"]'),
+        menucart: ()=> cy.get('a[href="/view_cart"]'),
         signLogin: ()=> cy.get('a[href="/login"]'),
         menudeleteacc: ()=> cy.get('a[href="/delete_account"]'),
         confirmdelete: ()=> cy.xpath('//*[contains(text(),"Account Deleted!")]'),
         btoncontinuedelete: ()=> cy.get('a[data-qa="continue-button"]')
     }
-    menulogout(){
-        this.elements.menuLogout().should('be.visible')
+    menuLogout(){
+        this.elements.menulogout().should('be.visible')
     }
     menuContactUs(){
-        this.elements.menuContactus().click()
+        this.elements.menucontactus().click()
+    }
+    clickmenuCart(){
+        this.elements.menucart().eq(0).click()
     }
     checkMenuMain(){
-        this.elements.menuProduct().should('be.visible')
-        this.elements.menuContactus().should('be.visible')
+        this.elements.menuproduct().should('be.visible')
+        this.elements.menucontactus().should('be.visible')
     }
     menulogin(){
         this.elements.signLogin().click()
@@ -31,7 +35,7 @@ class homePage{
         this.elements.btoncontinuedelete().click()
     }
     clickProduct(){
-        this.elements.menuProduct().click()
+        this.elements.menuproduct().click()
     }
 }
 module.exports = new homePage()

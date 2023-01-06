@@ -2,9 +2,9 @@
 import loginPageObjects from '../POM/pages/loginPages/loginPageObjects';
 import homePageObject from '../POM/pages/homePage/homePageObject';
 import contactusObjects from '../POM/pages/contactusPage/contactusObjects';
-import {Then} from '@badeball/cypress-cucumber-preprocessor';
 import productPage from '../POM/pages/productsPage/productPage';
-
+import cartpageObjects from '../POM/pages/cartPage/cartpageObjects';
+import {Then} from '@badeball/cypress-cucumber-preprocessor';
 
 //******** LOGIN ********/
 Then('the website {string} if its registered or not', (evaluate) => {
@@ -62,9 +62,6 @@ Then('product {string} is displayed',(stock)=>{
         case '5':
             productPage.checkbrandResult(5)
         break
-        case '5':
-            productPage.checkbrandResult(5)
-        break
         case '3':
             productPage.checkbrandResult(3)
         break
@@ -72,4 +69,12 @@ Then('product {string} is displayed',(stock)=>{
             break
     }
 
+})
+
+//******** CART ********/
+Then('the message for empty cart is displayed', ()=>{
+    cartpageObjects.checkMessageEmpty()  
+})
+Then('the product is added in the cart',()=>{
+    cartpageObjects.checkProductTable()
 })

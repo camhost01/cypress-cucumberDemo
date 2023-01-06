@@ -82,7 +82,7 @@ When('filtering by {string} and {string}', (category,product)=>{
             break
     }
 })
-When ('filter by {string}',(brand)=>{
+When('filter by {string}',(brand)=>{
     switch(brand){
         case 'Polo':
             productPage.clickbrandPolo()
@@ -100,3 +100,16 @@ When ('filter by {string}',(brand)=>{
         break
     }
 }) 
+
+//******** CART ********/
+When('clicks in the cart menu',()=>{
+    homePageObject.clickmenuCart()
+})
+When('add the {string} in the page',(product)=>{
+    homePageObject.clickProduct()
+    productPage.typeProducSearch(product)
+    productPage.clickProdSearch()
+    productPage.clickAddCart()
+    productPage.clickContinueShopping()
+    homePageObject.clickmenuCart()
+})
