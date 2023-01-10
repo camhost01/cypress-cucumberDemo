@@ -6,6 +6,7 @@ import contactusObjects from '../POM/pages/contactusPage/contactusObjects';
 import homePageObject from '../POM/pages/homePage/homePageObject';
 import productPage from '../POM/pages/productsPage/productPage';
 import {When} from '@badeball/cypress-cucumber-preprocessor';
+import cartpageObjects from '../POM/pages/cartPage/cartpageObjects';
 
 //******** LOGIN ********/
 When('click in the button login', () => {
@@ -112,4 +113,7 @@ When('add the {string} in the page',(product)=>{
     productPage.clickAddCart()
     productPage.clickContinueShopping()
     homePageObject.clickmenuCart()
+})
+When('delete a products from cart',()=>{
+    cartpageObjects.clickbtnDeleteCart()
 })

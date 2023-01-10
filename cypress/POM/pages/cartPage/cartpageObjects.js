@@ -11,5 +11,8 @@ class cartPage{
     checkProductTable(){
         this.elements.tableproduct().should('be.visible')
     }
+    clickbtnDeleteCart(){
+        this.elements.btndelete().click()
+    }
 }
 module.exports = new cartPage()

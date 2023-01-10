@@ -50,3 +50,12 @@ Given('a user in the product page', ()=> {
 Given('a user in the webpage', ()=> {
     homePageObject.checkMenuMain()
 })
+Given('a user in cart page with a products added',()=>{
+    homePageObject.checkMenuMain()
+    homePageObject.clickProduct()
+    productPage.typeProducSearch(data.product)
+    productPage.clickProdSearch()
+    productPage.clickAddCart()
+    productPage.clickContinueShopping()
+    homePageObject.clickmenuCart()
+})

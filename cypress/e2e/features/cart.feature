@@ -1,4 +1,4 @@
-Feature: Shoping Cart
+Feature: Shopping Cart
 
     Test a different functional scenarios related to the shoping Cart
 
@@ -16,4 +16,7 @@ Feature: Shoping Cart
         |  Jean   |
         |  Saree  | 
     
-    
+    Scenario: Delete products from cart
+    Given a user in cart page with a products added
+    When delete a products from cart
+    Then the message for empty cart is displayed
