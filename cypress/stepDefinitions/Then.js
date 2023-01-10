@@ -75,6 +75,6 @@ Then('product {string} is displayed',(stock)=>{
 Then('the message for empty cart is displayed', ()=>{
     cartpageObjects.checkMessageEmpty()  
 })
-Then('the product is added in the cart',()=>{
+Then('the product is added in the cart', ()=>{
     cartpageObjects.checkProductTable()
 })

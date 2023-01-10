@@ -16,5 +16,6 @@
   "mobilenum": "202-555-0179",
   "email": "myemail@test.com",
   "message": "Fixtures are a great way to mock data for responses to routes",
-  "subject": "This is a subject testing"
+  "subject": "This is a subject testing",
+  "product": "Jean"
 }
