@@ -78,3 +78,6 @@ Then('the message for empty cart is displayed', ()=>{
 Then('the product is added in the cart', ()=>{
     cartpageObjects.checkProductTable()
 })
+Then('a login form is displayed',()=>{
+    cartpageObjects.checkFormLogin()
+})

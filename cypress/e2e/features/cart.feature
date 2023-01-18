@@ -20,3 +20,8 @@ Feature: Shopping Cart
     Given a user in cart page with a products added
     When delete a products from cart
     Then the message for empty cart is displayed
+
+    Scenario: User cannot complete the checkout if is not loged
+    Given a user in cart page with a products added
+    When click in checkout button
+    Then a login form is displayed

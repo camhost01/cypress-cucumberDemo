@@ -117,3 +117,6 @@ When('add the {string} in the page',(product)=>{
 When('delete a products from cart',()=>{
     cartpageObjects.clickbtnDeleteCart()
 })
+When('click in checkout button', ()=>{
+    cartpageObjects.clickbtnCheckout()
+})
