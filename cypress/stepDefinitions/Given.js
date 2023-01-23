@@ -45,6 +45,13 @@ Given('a user in the product page', ()=> {
     homePageObject.clickProduct()
     productPage.checkAllProductResult()
 })
+Given('a user in the review page',()=>{
+    homePageObject.clickProduct()
+    productPage.typeProducSearch(data.product)
+    productPage.clickProdSearch()
+    productPage.clickViewProduct()
+    productPage.checkViewProdPage()
+})
 
 //******** CART ********/
 Given('a user in the webpage', ()=> {

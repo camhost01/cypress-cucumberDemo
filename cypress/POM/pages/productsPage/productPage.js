@@ -5,6 +5,13 @@ class productP
         productsingleresult: ()=> cy.get('#cartModal'),
         productbrandresult: ()=> cy.get('.features_items .col-sm-4'),
         productsearch: ()=> cy.get('#search_product'),
+        viewproduct: ()=> cy.get('a[href="/product_details/33"]'),
+        viewproductpage: ()=> cy.get('.product-information'),
+        viewpname: ()=> cy.get('#name'),
+        viewpemail: ()=> cy.get('#email'),
+        viewpmessage: ()=> cy.get('#review'),
+        successreviewmessage: ()=> cy.get('.alert-success'),
+        btnsubbmitvp: ()=> cy.get('#button-review'),
         btnaddcart: ()=> cy.get('.add-to-cart'),
         btncontinuechop: ()=> cy.get('button[data-dismiss="modal"]'),
         btnviewcart: ()=> cy.get('a[href="/view_cart"]'),
@@ -34,11 +41,25 @@ class productP
     checkNoResults(){
         this.elements.productsingleresult().should('be.hidden')
     }
+    checkViewProdPage(){
+        this.elements.viewproductpage().should('be.visible')
+    }
     clickProdSearch(){
         this.elements.btnprodsearch().click()
     }
+    clickViewProduct(){
+        this.elements.viewproduct().click()
+    }
     clickAddCart(){
         this.elements.btnaddcart().eq(0).click()
+    }
+    addProductReview(name,email,review){
+        this.elements.viewpname().type(name)
+        this.elements.viewpemail().type(email)
+        this.elements.viewpmessage().type(review)
+    }
+    clickSubbmitReview(){
+        this.elements.btnsubbmitvp().click()
     }
     clickContinueShopping(){
         this.elements.btncontinuechop().click()
@@ -95,6 +116,11 @@ class productP
         this.elements.productbrandresult().should(($val)=>{
             expect($val).to.have.length(stock)
         })
+    }
+    checkSuccessProductR(){
+        this.elements.successreviewmessage()
+        .eq(0)
+        .should('be.visible')
     }
 }
 module.exports = new productP()

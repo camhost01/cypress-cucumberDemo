@@ -70,6 +70,9 @@ Then('product {string} is displayed',(stock)=>{
     }
 
 })
+Then('the success message of review is displayed',()=>{
+    productPage.checkSuccessProductR()
+})
 
 //******** CART ********/
 Then('the message for empty cart is displayed', ()=>{

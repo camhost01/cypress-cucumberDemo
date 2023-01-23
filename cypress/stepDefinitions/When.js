@@ -101,6 +101,10 @@ When('filter by {string}',(brand)=>{
         break
     }
 }) 
+When('add a review for a product', ()=>{
+    productPage.addProductReview(data.name,data.email,data.message)
+    productPage.clickSubbmitReview()
+})
 
 //******** CART ********/
 When('clicks in the cart menu',()=>{
