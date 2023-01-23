@@ -37,3 +37,8 @@ Feature: Products page
     |    H&M       |   5   |
     |   Madame     |   5   |
     | Kookie Kids  |   3   |
+
+    Scenario: Validate the review for a product
+    Given a user in the review page
+    When add a review for a product
+    Then the success message of review is displayed
