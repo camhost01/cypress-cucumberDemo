@@ -28,7 +28,7 @@ Given('a person logued in the website', ()=> {
     loginPageObjects.typeUserEmail(data.useremail)
     loginPageObjects.typePass(data.userpass)
     loginPageObjects.clickLogin()
-    homePageObject.menulogout()
+    homePageObject.menuLogout()
 })
 
 //******** CONTACT US ********/
