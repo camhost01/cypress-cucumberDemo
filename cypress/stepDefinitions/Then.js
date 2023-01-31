@@ -11,7 +11,7 @@ Then('the website {string} if its registered or not', (evaluate) => {
     switch(evaluate)
     {
         case 'access':
-            homePageObject.menulogout()
+            homePageObject.menuLogout()
             break
         case 'no_access':
             loginPageObjects.getErrormessage()
@@ -21,7 +21,7 @@ Then('the website {string} if its registered or not', (evaluate) => {
     }
 })
 Then('the user is created in the website', ()=>{
-    homePageObject.menulogout()
+    homePageObject.menuLogout()
 })
 Then('message is displayed confirmed the Account was delete', () => {
     homePageObject.checkDeleteMessage()
