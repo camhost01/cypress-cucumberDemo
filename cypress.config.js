@@ -7,6 +7,8 @@ module.exports = defineConfig({
 e2e: {
   defaultCommandTimeout: 7000,
   pageLoadTimeout: 10000,
+  video:false,
+  screenshotOnRunFailure:false,
   async setupNodeEvents(on, config) {
   // implement node event listeners here
     const bundler = createBundler({

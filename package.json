@@ -4,7 +4,11 @@
   "description": "Cucumber examples with cypress",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "test_chrome": "cypress run --browser=chrome",
+    "test_firefox": "cypress run --browser=firefox",
+    "test_edge": "cypress run --browser=edge",
+    "test_electron": "cypress run --browser=electron"
   },
   "keywords": [
     "BDD",
