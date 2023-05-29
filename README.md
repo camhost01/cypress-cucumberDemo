@@ -18,7 +18,7 @@ Open VSC and clone the project to your local with git clone https://github.com/c
 
 move to the folder
 ```sh
-cd cypress-cucumberDemo.git
+cd cypress-cucumberDemo
 ```
 <b>#4 Execute the project</b>
 
