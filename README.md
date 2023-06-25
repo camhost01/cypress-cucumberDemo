@@ -16,14 +16,10 @@ Open VSC and clone the project to your local with git clone https://github.com/c
 
 <img width="1456" alt="image" src="https://user-images.githubusercontent.com/39304271/210273513-6d6ebec5-4ddd-468a-92bd-adc19d26c5dd.png">
 
-<b>#3 Extract the folders contained in the Folder cypress-cucumberDemo</b>
-
-<img width="510" alt="image" src="https://user-images.githubusercontent.com/39304271/210273678-fcec4150-e242-40ef-bd90-7bd179151484.png">
-
-and then delete the previous folder
-
-<img width="512" alt="image" src="https://user-images.githubusercontent.com/39304271/210273797-162b6df4-b0f9-4c75-8a0e-0d679ab161a9.png">
-
+move to the folder
+```sh
+cd cypress-cucumberDemo
+```
 <b>#4 Execute the project</b>
 
 For execute you can use in the terminal the command: npm run cy:open, this cypress interface is opened
