@@ -20,6 +20,12 @@ move to the folder
 ```sh
 cd cypress-cucumberDemo
 ```
+
+Install cypress
+```sh
+npm install cypress@12.2.0 --save-dev
+```
+
 <b>#4 Execute the project</b>
 
 For execute you can use in the terminal the command: npm run cy:open, this cypress interface is opened
