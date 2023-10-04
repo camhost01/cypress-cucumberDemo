@@ -66,3 +66,7 @@ Given('a user in cart page with a products added',()=>{
     productPage.clickContinueShopping()
     homePageObject.clickmenuCart()
 })
+Given('a user in the cart page', ()=>{
+    homePageObject.checkMenuMain()
+    homePageObject.clickmenuCart()
+})

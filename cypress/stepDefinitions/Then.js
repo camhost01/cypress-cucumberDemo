@@ -84,3 +84,6 @@ Then('the product is added in the cart', ()=>{
 Then('a login form is displayed',()=>{
     cartpageObjects.checkFormLogin()
 })
+Then('the success message is displayed',()=>{
+    cartpageObjects.checkmsgSubscribed()
+})

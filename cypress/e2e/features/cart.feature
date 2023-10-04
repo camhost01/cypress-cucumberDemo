@@ -1,6 +1,6 @@
 Feature: Shopping Cart
 
-    Test a different functional scenarios related to the shoping Cart
+    Test a different functional scenarios related to the shopping Cart
 
     Scenario: Message for empty cart
     Given a user in the webpage
@@ -25,3 +25,8 @@ Feature: Shopping Cart
     Given a user in cart page with a products added
     When click in checkout button
     Then a login form is displayed
+
+    Scenario: Check the email suscription
+    Given a user in the cart page
+    When add a email in the subscription field
+    Then the success message is displayed 

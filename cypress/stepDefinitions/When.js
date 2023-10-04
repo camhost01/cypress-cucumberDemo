@@ -124,3 +124,7 @@ When('delete a products from cart',()=>{
 When('click in checkout button', ()=>{
     cartpageObjects.clickbtnCheckout()
 })
+When('add a email in the subscription field',()=>{
+    cartpageObjects.addEmailSubscription(data.email)
+    cartpageObjects.clickEmailSubs()
+})
