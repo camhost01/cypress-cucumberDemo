@@ -13,7 +13,7 @@ Then the website "<evaluate>" if its registered or not
 
 Examples:
 | user | evaluate |
-| example1@test.com | access |
+| example2@test.com | access |
 | otrouser@test.com | no_access |
 
 Scenario: Delete Account

@@ -1,9 +1,9 @@
 {
   "website": "https://automationexercise.com/",
   "name": "testing",
-  "signupUserName": "example1@test.com",
+  "signupUserName": "example2@test.com",
   "signupUserPass": "foobar",
-  "useremail": "example1@test.com",
+  "useremail": "example2@test.com",
   "userpass": "foobar",
   "firstname": "exfirstname",
   "lastname": "exlastname",
