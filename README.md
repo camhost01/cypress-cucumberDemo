@@ -45,3 +45,29 @@ and select a browser to execute
 <b>Enjoy!</b>
 <img width="1675" alt="image" src="https://user-images.githubusercontent.com/39304271/210274032-02178ad2-ff3f-4f59-8fdd-102d2ce26208.png">
 <img width="1658" alt="image" src="https://user-images.githubusercontent.com/39304271/210274068-ed5129e4-2404-4130-a284-012d316323dc.png">
+
+## Execute the project by script
+When use the execution by script, the entire features are executed
+
+<img width="787" alt="image" src="https://github.com/camhost01/cypress-cucumberDemo/assets/39304271/8d4bb0a7-5058-4562-bd1c-a6f51619ea8c">
+
+# Mochawesome Report
+Install dependencies in the project
+
+```sh
+npm install mochawesome cypress-mochawesome-reporter mochawesome-merge mochawesome-report-generator --save-dev
+```
+
+After execute the project by scrip, a folder with .json are created, those json represent the feature executed 
+
+<img width="471" alt="image" src="https://github.com/camhost01/cypress-cucumberDemo/assets/39304271/b6e2b522-8897-4dd2-937c-27fc8ce4cb97">
+
+Then, run the script "generateReport"
+
+<img width="1137" alt="image" src="https://github.com/camhost01/cypress-cucumberDemo/assets/39304271/fd902a90-3c85-44c2-9efe-b9d8f135f88b">
+
+And, in the mochawesome-report folder a .html is created
+
+<img width="1569" alt="image" src="https://github.com/camhost01/cypress-cucumberDemo/assets/39304271/dc05301c-dc09-4e9b-bc13-c26c85a270b9">
+
+<img width="1779" alt="image" src="https://github.com/camhost01/cypress-cucumberDemo/assets/39304271/d41db3d7-759f-46f1-bcae-0882111f3b7f">
